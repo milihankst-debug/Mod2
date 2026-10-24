@@ -1,0 +1,34 @@
+{
+	"geode": "4.0.1",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "milihankst.custom-menu",
+	"name": "Custom Menu",
+	"version": "v1.0.0",
+	"developer": "milihankst",
+	"description": "Свой фон и музыка в меню",
+	"settings": {
+		"music-path": {
+			"type": "file",
+			"name": "Музыка меню",
+			"default": "",
+			"control": {
+				"dialog": "open",
+				"filters": [{ "files": ["*.mp3", "*.ogg", "*.wav"], "description": "Аудио" }]
+			}
+		},
+		"bg-path": {
+			"type": "file",
+			"name": "Фон меню",
+			"default": "",
+			"control": {
+				"dialog": "open",
+				"filters": [{ "files": ["*.png", "*.jpg", "*.jpeg"], "description": "Картинки" }]
+			}
+		}
+	}
+}
